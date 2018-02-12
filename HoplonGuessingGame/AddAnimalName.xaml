@@ -1,0 +1,19 @@
+﻿<Window x:Class="HoplonGuessingGame.AddAnimalName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HoplonGuessingGame"
+        mc:Ignorable="d"
+        Title="Guessing Game" Height="131.819" Width="435.455" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,2" HorizontalAlignment="Left" Width="425">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="277*"/>
+            <ColumnDefinition Width="150*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Right" Margin="0,40,10,0" TextWrapping="Wrap" Text="" Width="407" Grid.ColumnSpan="2" Height="21" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="OK" HorizontalAlignment="Left" Margin="65.091,70,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="button_Click"/>
+        <Label x:Name="label" Content="What was the animal that you thought about?" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Width="407" Height="25" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
