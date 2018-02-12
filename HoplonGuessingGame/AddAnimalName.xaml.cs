@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace HoplonGuessingGame
 {
     /// <summary>
-    /// Interaction logic for AddAnimalName.xaml
+    /// Interaction logic for  AddAnimalName.xaml
     /// </summary>
     public partial class AddAnimalName : Window
     {
