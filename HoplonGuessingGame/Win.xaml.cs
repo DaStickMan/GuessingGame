@@ -20,6 +20,8 @@ namespace HoplonGuessingGame
     /// </summary>
     public partial class Win : Window
     {
+        private bool clickedOk = false;
+
         public Win()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace HoplonGuessingGame
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            clickedOk = true;
             var mainWindow = new MainWindow();
             mainWindow.Show();
             Close();
@@ -34,8 +37,11 @@ namespace HoplonGuessingGame
 
         protected override void OnClosing(CancelEventArgs e)
         {
-            var mainWindow = new MainWindow();
-            mainWindow.Show();   
+            if (!clickedOk)
+            {
+                var mainWindow = new MainWindow();
+                mainWindow.Show();
+            }
         }
     }
 }
