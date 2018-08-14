@@ -31,11 +31,5 @@ namespace HoplonGuessingGame
             mainWindow.Show();
             Close();
         }
-
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            var mainWindow = new MainWindow();
-            mainWindow.Show();   
-        }
     }
 }
