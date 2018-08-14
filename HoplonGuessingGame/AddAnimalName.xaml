@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <TextBox x:Name="textBoxName" HorizontalAlignment="Right" Margin="0,40,10,0" TextWrapping="Wrap" Text="" Width="407" Grid.ColumnSpan="2" Height="21" VerticalAlignment="Top"/>
         <Button x:Name="button" Content="OK" HorizontalAlignment="Left" Margin="65.091,70,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="button_Click"/>
-        <Label x:Name="label" Content="What was the animal that you thought about?" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Width="407" Height="25" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="What was the animal that you thought about?" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" Width="407" Height="30" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
